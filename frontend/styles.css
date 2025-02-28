@@ -47,7 +47,9 @@ nav a {
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    padding:12.5px;
+
 }
 
 section {
