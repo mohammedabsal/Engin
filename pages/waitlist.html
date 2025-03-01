@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Waiting List - Engin</title>
+    <link rel="stylesheet" href="/frontend/styles.css">
+</head>
+<body>
+    <div class="top">
+        <a href="/frontend/index.html">Back to Home</a>
+    </div>
+     <section id="waiting-list">
+        <h1>Join the Waiting List</h1>
+        <p>Be among the first to experience the future of startup collaboration.</p>
+        <form id="waiting-list-form">
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="role">Your Role</label>
+                <select id="role" name="role" required>
+                    <option value="">Select your role</option>
+                    <option value="founder">Creator/Collabrator</option>
+                    <option value="investor">Investor</option>
+                    <option value="mentor">Mentor</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="City, Country" required>
+            </div>
+                <div class="form-group">
+                    <label>Share your insights</label>
+                    <input type="text" placeholder="share your insights" required>
+                </div>
+            <center><button type="submit" class="cta">Join Waiting List</button></center>
+        </form>
+    </section>
+
+    <footer>
+        <p>It's a long way to go, but we're here to walk it with you. - Engin</p>
+    </footer>
+
+    <script src="/frontend/script.js"></script>
+</body>
+</html>

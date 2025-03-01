@@ -85,7 +85,7 @@ section {
 #features .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .feature {
@@ -93,8 +93,9 @@ section {
     padding: 1rem;
     border-radius: 20px;
     color:#fff;
-    border:3px solid white;
-    box-shadow: 0 0 15px rgba(0, 123, 255, 0.8); 
+    border:0px solid white;
+    box-shadow: 0 0 15px rgba(12, 181, 196, 0.8); 
+    width:80%;
 }
 .feature:hover {
     box-shadow: 0 0 25px rgba(0, 123, 255, 1); /* Brighter glow on hover */
@@ -105,8 +106,8 @@ section {
     line-height: 1.5;
 }
 footer {
-    background: #333;
-    color: #fff;
+    background: rgba(0, 123, 255, 1);
+    color: #fcf8f8;
     text-align: center;
     padding: 1rem 0;
 }
@@ -123,5 +124,90 @@ footer {
 
     header .hero p {
         font-size: 1rem;
+    }
+}
+/* this is for waitlist form
+/* Existing styles... */
+.top {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 123, 255, 1); /* Blue background */
+    padding: 9px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.top a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.top:hover {
+    background-color: #3dcfe2; /* Darker blue on hover */
+}
+
+
+#waiting-list {
+    padding: 2rem;
+    text-align: center;
+}
+
+#waiting-list-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 0.75rem;
+
+}
+
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12.5px;
+    border: 3px solid rgba(0, 123, 255, 1);
+    border-radius: 10px;
+    box-sizing:border-box;
+}
+.form-group select {
+    appearance: none; /* Remove default arrow */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 2rem; /* Add space for the custom arrow */
+    box-sizing:border-box;
+}
+.form-group input, .form-group select, .form-group button {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+button.cta {
+    width: 50%;
+    justify-content:center;
+    padding: 1.25rem;
+    background-color: rgba(0, 123, 255, 1);
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size:1.5rem;
+    font-weight:bold;
+
+}
+
+@media (max-width: 768px) {
+    #waiting-list-form {
+        padding: 0 1rem;
     }
 }

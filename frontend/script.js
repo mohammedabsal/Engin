@@ -10,3 +10,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('waiting-list-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Here you can add code to handle form submission, e.g., send data to a server
+        alert('Thank you for joining the waiting list!');
+        form.reset();
+    });
+});
