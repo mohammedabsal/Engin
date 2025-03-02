@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         try {
-            const response = await fetch("https://your-backend-url.onrender.com/api/register", {
+            const response = await fetch("https://engin-backend.onrender.com/api/register", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
