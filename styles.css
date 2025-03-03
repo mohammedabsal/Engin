@@ -32,7 +32,8 @@ body {
     font-size: 1.8rem;
     font-weight: bold;
     color: white;
-    text-shadow: 0 0 10px cyan;
+    /*text-shadow: 0 0 10px cyan;*/
+    font-family: 'Helvetica', sans-serif;
 }
 
 /* Menu Container */
@@ -275,22 +276,23 @@ h1 {
     font-size: 18px;
     line-height: 1.6;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
 .highlight {
     font-weight: 600;
-    color: cyan;
+    color: white;
     text-shadow: 0 0 8px cyan;
 }
-
+/*
 .glow-text {
     font-weight: 600;
     color: rgb(194, 248, 248);
     text-shadow: 0 0 12px cyan, 0 0 20px cyan;
     animation: glow 1.5s infinite alternate;
-}
+} */
 
-/* Glow Animation */
+/* Glow Animation 
 @keyframes glow {
     from {
         text-shadow: 0 0 10px cyan, 0 0 20px cyan;
@@ -298,7 +300,8 @@ h1 {
     to {
         text-shadow: 0 0 20px cyan, 0 0 30px cyan;
     }
-}
+} */
+
 /* About Engin Ends Here*/
 
 /*Unleash Your Potential Starts here */
@@ -349,11 +352,13 @@ h1 {
 h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    font-family: 'Roboto',sans-serif;
 }
 
 p {
     font-size: 1rem;
     color: #ccc;
+    font-family: 'Adorn',serif;
 }
 
 
