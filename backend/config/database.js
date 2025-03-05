@@ -1,29 +1,32 @@
-require('dotenv').config();
+// config/database.js
 const { Pool } = require('pg');
+require('dotenv').config();
 
+// Create a pool using the connection string
 const pool = new Pool({
-    connectionString: process.env.DATABASE_URL,
-    ssl: { rejectUnauthorized: false }
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false // Needed for connecting to some hosted PostgreSQL services
+  }
 });
 
-const createTableQuery = `
-CREATE TABLE IF NOT EXISTS users (
-    id SERIAL PRIMARY KEY,
-    full_name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) UNIQUE NOT NULL,
-    role VARCHAR(50) NOT NULL,
-    location VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-`;
-
 const connectDB = async () => {
-    try {
-        await pool.query(createTableQuery);
-        console.log("✅ Users table ready!");
-    } catch (error) {
-        console.error("❌ Database Table Error:", error.message);
+  try {
+    const client = await pool.connect();
+    console.log('✅ Database connected successfully');
+    client.release();
+  } catch (err) {
+    console.error('❌ Database Connection Error:', err);
+    
+    if (!process.env.DATABASE_URL) {
+      console.error('DATABASE_URL environment variable is not set!');
+    } else {
+      console.error('DATABASE_URL is set, but connection failed. Check if the URL is correct.');
     }
+  }
 };
 
-module.exports = { pool, connectDB };
+// Export the pool directly (not in an object) to allow pool.query() to work
+module.exports = pool;
+// Also export connectDB separately to maintain compatibility with server.js
+module.exports.connectDB = connectDB;
