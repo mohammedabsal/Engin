@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const email = document.getElementById("email").value.trim();
         const role = document.getElementById("role").value.trim();
         const location = document.getElementById("location").value.trim();
+        const insights = document.getElementById("insights").value; // New field
 
         if (!fullName || !email || !role || !location) {
             alert("Please fill out all fields.");
