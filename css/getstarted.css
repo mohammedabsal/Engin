@@ -8,7 +8,7 @@
 
 /* Body Styling */
 body {
-    background: #000; /* Adjusted to match the exact image */
+    background: #000;
     color: white;
     text-align: center;
     display: flex;
@@ -30,24 +30,22 @@ body {
 }
 
 .back-link:hover {
-    color: white; /* Changes to white on hover */
+    color: white;
     text-shadow: 0 0 10px cyan;
 }
 
-
-/* Form Container - Enlarged */
+/* Form Container */
 .form-container {
     background: linear-gradient(135deg, rgba(0, 10, 20, 0.9), rgba(0, 0, 0, 0.95));
     padding: 50px;
     border-radius: 20px;
-    width: 600px; /* Increased size */
+    width: 600px;
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
     text-align: left;
     transform: scale(1);
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hover effect - Slight Pop */
 .form-container:hover {
     transform: scale(1.02);
 }
@@ -82,7 +80,7 @@ label {
 }
 
 /* Input Fields */
-input, select {
+input, select, textarea {
     width: 100%;
     padding: 15px;
     margin-top: 8px;
@@ -96,22 +94,28 @@ input, select {
     box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-/* Dropdown Options - Change Text to Black */
+/* Dropdown Options */
 select option {
     background: white;
     color: black;
 }
 
-/* Hover and Click Effects */
-input:hover, select:hover {
+/* Hover & Focus Effects */
+input:hover, select:hover, textarea:hover {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
 }
 
-input:focus, select:focus {
+input:focus, select:focus, textarea:focus {
     background: rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     transform: scale(1.02);
+}
+
+/* Insights Section */
+textarea {
+    resize: none;
+    height: 100px;
 }
 
 /* Submit Button */
@@ -130,13 +134,11 @@ input:focus, select:focus {
     box-shadow: 0 4px 0px rgba(0, 255, 255, 0.8);
 }
 
-/* 3D Click Effect */
 .submit-btn:active {
     box-shadow: none;
     transform: translateY(4px);
 }
 
-/* Hover Effect */
 .submit-btn:hover {
     background: white;
     color: cyan;
@@ -154,7 +156,7 @@ input:focus, select:focus {
         font-size: 1.8rem;
     }
 
-    input, select {
+    input, select, textarea {
         font-size: 1rem;
         padding: 12px;
     }
