@@ -1,0 +1,93 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Centering the Success Box */
+body {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Success Box */
+.success-container {
+    text-align: center;
+}
+
+.success-card {
+    background: linear-gradient(135deg, rgba(0, 10, 20, 0.9), rgba(0, 0, 0, 0.95));
+    padding: 50px;
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    text-align: center;
+}
+
+/* Checkmark Circle */
+.checkmark-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: black;
+    margin: 0 auto 20px;
+}
+
+/* Success Message */
+h2 {
+    color: cyan;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+/* Success Message */
+.success-message {
+    font-size: 18px;
+    white-space: nowrap;  /* Prevents text from wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; /* Ensures it fits within the box */
+    margin: 0 auto 25px;
+}
+
+
+/* Quote */
+blockquote {
+    font-size: 16px;
+    font-style: italic;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* -ENGIN Text */
+.engin-text {
+    color: cyan;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* Back to Home Link */
+.back-home {
+    color: cyan;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.back-home:hover {
+    color: white;  /* Changes to white on hover */
+    text-shadow: 0 0 10px cyan;
+}
