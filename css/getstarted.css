@@ -16,6 +16,7 @@ body {
     align-items: center;
     min-height: 100vh;
     flex-direction: column;
+    padding: 20px;
 }
 
 /* Back to Home Link */
@@ -40,6 +41,7 @@ body {
     padding: 50px;
     border-radius: 20px;
     width: 600px;
+    max-width: 100%;
     box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
     text-align: left;
     transition: transform 0.3s ease-in-out;
@@ -102,7 +104,7 @@ input, select, textarea {
 /* Dropdown Options */
 select option {
     background: white;
-    color: black; /* Updated to black */
+    color: black;
 }
 
 /* Hover & Focus Effects */
@@ -140,4 +142,62 @@ textarea {
     background: white;
     color: cyan;
     transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+    }
+
+    .form-subtitle {
+        font-size: 1rem;
+    }
+
+    input, select, textarea {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 1.1rem;
+    }
+
+    .back-link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .form-subtitle {
+        font-size: 0.9rem;
+    }
+
+    input, select, textarea {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .submit-btn {
+        font-size: 1rem;
+    }
+
+    .back-link {
+        font-size: 0.9rem;
+        top: 10px;
+        left: 10px;
+    }
 }
