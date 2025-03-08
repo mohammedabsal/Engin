@@ -47,9 +47,9 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-.form-container:hover {
+/* .form-container:hover {
     transform: scale(1.02);
-}
+} */
 
 /* Title Styling */
 .form-title {
@@ -139,8 +139,9 @@ textarea {
 }
 
 .submit-btn:hover {
-    background: white;
-    color: cyan;
+    background: cyan;
+    color: rgb(231, 239, 239);
+    
     transform: scale(1.05);
 }
 
